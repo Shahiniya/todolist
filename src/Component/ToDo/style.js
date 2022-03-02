@@ -1,14 +1,19 @@
 import styled from 'styled-components';
-// import {ReactComponent as heart} from './assests/icons/heart.svg'
+import { Exclamation } from 'styled-icons/bootstrap';
+import { Eca } from 'styled-icons/crypto';
+import {ReactComponent as heart} from '../../assests/icons/heart.svg';
+// import {ReactComponent as heart} from '../../assests/icons/heart.svg';
+import {ReactComponent as trash} from '../../assests/icons/trash.svg';
 
 export const Container= styled.div`
-width:500px;
+width:550px;
 height:700px;
 background-color:black;
 color:white;
 margin:10px;
 display:flex;
 flex-direction:column;
+position: relative;
 
 `;
 export const Title = styled.div`
@@ -27,46 +32,45 @@ export const BigContainer = styled.div`
 display:flex;
 flex-direction:column;
 margin:5px 20px;
-
+ overflow:auto; 
  width:90%;
-height:70px;
+height:400px;
 color:white;
- background-color:blue;
+ /* background-color:blue; */
 `;
 export const Box = styled.div`
-width:100%;
+width:450px;
 height:70px;
 color:white;
 background-color:black;
 display:flex;
-margin:20px 0px;
+margin:20px 20px;
 border:3px solid white;
 border-radius: 5px ;
 font-size:20px;
- /* overflow:scroll;  */
-
-
 
 `;
 export const Container1 = styled.div`
-width:100%;
+width:500px;
 height:50px;
 color:white;
 /* background-color:red; */
 display:flex;
 justify-content:space-between;
-margin:450px 20px;
+margin:430px 20px;
+position:absolute;
+top:200px;
 
 input{
-    width:300px;
+    width:200px;
     color:white;
-    font-size:20px;
+    font-size:25px;
     background-color:black;
     border:none;
 
 }
 button{
-    margin:10px 10px;
+    /* margin:10px 0px; */
     width:110px;
     height:40px;
     background-color:green;
@@ -79,7 +83,12 @@ button{
 `;
 
 
+export const Heart = styled(heart)`
+
+`;
 // export const Heart = styled(heart)`
 
 // `;
+export const Trash = styled(trash)`
 
+`;

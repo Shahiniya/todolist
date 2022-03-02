@@ -1,5 +1,6 @@
-import { Box, BigContainer, Container,Container1, Title } from './style'
+import { Heart,Box, BigContainer, Container,Container1, Title } from './style'
 import React,{useState} from 'react'
+import { Trash } from 'styled-icons/bootstrap';
 
 
 
@@ -23,7 +24,7 @@ export const Todo = (id) => {
     <Container>
         <Title>
         <h1>To Do List</h1>
-        </Title>
+                </Title>
         {
           
         }
@@ -32,6 +33,8 @@ export const Todo = (id) => {
         {newEntry.map((value)=>( 
           <Box key={id}>
           <h2>{value.todo}</h2>
+          <Heart/>
+          <Trash/>
           </Box>
           
          ))}
