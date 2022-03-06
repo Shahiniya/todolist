@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import {ReactComponent as check} from '../../assests/icons/check.svg';
-import {ReactComponent as star} from '../../assests/icons/star.svg';
-import {ReactComponent as trash} from '../../assests/icons/trash.svg';
 // import { heart } from '@fortawesome/react-fontawesome'
 
 export const Container= styled.div`
@@ -13,6 +10,11 @@ margin:10px;
 display:flex;
 flex-direction:column;
 position: relative;
+h2{
+    text-align:left;
+    /* background-color:red; */
+    margin-left:10px;
+}
 
 `;
 export const Title = styled.div`
@@ -27,6 +29,9 @@ margin:20px 100px;
  /* overflow:scroll; */
 `;
 
+export const Input1 = styled.input`
+background-color:white;
+`;
 export const BigContainer = styled.div`
 display:flex;
 flex-direction:column;
@@ -38,15 +43,18 @@ color:white;
  /* background-color:blue; */
 `;
 export const Box = styled.div`
-width:450px;
+width:480px;
 height:70px;
 color:white;
-background-color:black;
+background-color:grey;
 display:flex;
 margin:20px 20px;
 border:3px solid white;
 border-radius: 5px ;
 font-size:20px;
+h2{
+    margin-right:40px;
+}
 
 `;
 export const Container1 = styled.div`
@@ -81,20 +89,33 @@ button{
 
 `;
 
-export const Check = styled(check)`
-background-color:red;
-`;
-
-export const Star = styled(star)`
-width:30px;
-height:30px;
+export const Check = styled.img`
+/* background-color:white; */
 color:white;
-background-color:white;
+width:40px;
+height:40px;
+margin:10px 0px;
+position:absolute;
+right:200px;
 `;
-// export const Heart = styled(heart)`
 
-// `;
-export const Trash = styled(trash)`
-width:10px;
-height:10px;
+export const Star = styled.img`
+width:40px;
+height:40px;
+color:white;
+margin:10px 10px;
+position : absolute;
+right:140px;
+/* background-color:white; */
+/* margin-left:320px; */
+`;
+
+export const Trash = styled.img`
+width:40px;
+height:40px;
+margin:10px 0px;
+position : absolute;
+right:100px;
+
+/* background-color:white; */
 `;

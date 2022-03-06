@@ -1,5 +1,9 @@
-import { Box, BigContainer, Container,Container1, Title, Trash,Check, Star } from './style'
-import React,{useState} from 'react'
+import { Box, BigContainer, Container,Container1, Title, Trash,Check, Star, Input1 } from './style'
+import React,{useState} from 'react';
+import check from '../../assests/icons/check.png';
+import star from '../../assests/icons/star.png';
+import trash from '../../assests/icons/delete.png';
+
 // import { Trash } from 'styled-icons/bootstrap';
 
 
@@ -20,22 +24,32 @@ export const Todo = (id) => {
        setNewentry([...newEntry,newdata]);
        setTodo('');
     }
+
+    const onDelete = (id) =>{
+     let res = newEntry.filter((value)=> value.id !== id)
+     setNewentry(res);
+    }
   return (
     <Container>
         <Title>
         <h1>To Do List</h1>
                 </Title>
-        {
-          
-        }
+    
+       <h2>
+         Data now: {new Date().getHours()} : {new Date().getMinutes()}
+       </h2>
+       
     <BigContainer>
     
         {newEntry.map((value)=>( 
           <Box key={id}>
           <h2>{value.todo}</h2>
-          <Check/>
-          <Star/>
-          <Trash/>
+          <div>
+          <button  onClick={()=>onDelete(setNewentry)} >del</button>
+          <Check src={check} alt='test'/>
+          <Star src={star} alt='test'/>
+          <Trash onClick={()=>onDelete(id)} src={trash} alt='test'/>
+          </div>
           </Box>
           
          ))}
