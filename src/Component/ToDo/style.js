@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { Exclamation } from 'styled-icons/bootstrap';
-import { Eca } from 'styled-icons/crypto';
-import {ReactComponent as heart} from '../../assests/icons/heart.svg';
-// import {ReactComponent as heart} from '../../assests/icons/heart.svg';
+import {ReactComponent as check} from '../../assests/icons/check.svg';
+import {ReactComponent as star} from '../../assests/icons/star.svg';
 import {ReactComponent as trash} from '../../assests/icons/trash.svg';
+// import { heart } from '@fortawesome/react-fontawesome'
 
 export const Container= styled.div`
-width:550px;
+width:600px;
 height:700px;
 background-color:black;
 color:white;
@@ -34,7 +33,7 @@ flex-direction:column;
 margin:5px 20px;
  overflow:auto; 
  width:90%;
-height:400px;
+height:800px;
 color:white;
  /* background-color:blue; */
 `;
@@ -82,13 +81,20 @@ button{
 
 `;
 
+export const Check = styled(check)`
+background-color:red;
+`;
 
-export const Heart = styled(heart)`
-
+export const Star = styled(star)`
+width:30px;
+height:30px;
+color:white;
+background-color:white;
 `;
 // export const Heart = styled(heart)`
 
 // `;
 export const Trash = styled(trash)`
-
+width:10px;
+height:10px;
 `;
