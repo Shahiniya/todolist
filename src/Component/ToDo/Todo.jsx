@@ -45,10 +45,10 @@ export const Todo = (id) => {
           <Box key={id}>
           <h2>{value.todo}</h2>
           <div>
-          <button  onClick={()=>onDelete(setNewentry)} >del</button>
+          
           <Check src={check} alt='test'/>
           <Star src={star} alt='test'/>
-          <Trash onClick={()=>onDelete(id)} src={trash} alt='test'/>
+          <Trash onClick={()=>onDelete(value.id)} src={trash} alt='test'/>
           </div>
           </Box>
           
