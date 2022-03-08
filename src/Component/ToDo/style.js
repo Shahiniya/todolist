@@ -6,14 +6,17 @@ width:600px;
 height:700px;
 background-color:black;
 color:white;
-margin:10px;
+margin:30px 800px;
 display:flex;
 flex-direction:column;
+justify-content:center;
+/* align-items:center; */
 position: relative;
+border-radius:10px;
 h2{
     text-align:left;
     /* background-color:red; */
-    margin-left:10px;
+    margin-left:30px;
 }
 
 `;
@@ -43,8 +46,8 @@ color:white;
  /* background-color:blue; */
 `;
 export const Box = styled.div`
-width:480px;
-height:70px;
+width:460px;
+height:60px;
 color:white;
 background-color:grey;
 display:flex;
@@ -52,24 +55,25 @@ margin:20px 20px;
 border:3px solid white;
 border-radius: 5px ;
 font-size:20px;
-h2{
+div{
     margin-right:40px;
+    width:50%;
 }
 
 `;
 export const Container1 = styled.div`
-width:500px;
+width:550px;
 height:50px;
 color:white;
 /* background-color:red; */
 display:flex;
 justify-content:space-between;
-margin:430px 20px;
+margin:430px 30px;
 position:absolute;
 top:200px;
 
 input{
-    width:200px;
+    width:60%;
     color:white;
     font-size:25px;
     background-color:black;
